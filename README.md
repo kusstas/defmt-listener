@@ -1,11 +1,11 @@
 # `defmt-listener`
 
-A tool to decode and print defmt-tim data received from tcp.
+A tool to decode and print defmt-itm data received from tcp.
 
 ## Usage
 
 ```sh
-defmt-listener --listen "127.0.0.1:50003" --port 0 --elf <path-to-elf>
+defmt-listener --listen "127.0.0.1:50003" --port 0 --elf /path/to/elf
 ```
 
 ## License
