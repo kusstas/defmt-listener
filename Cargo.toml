@@ -1,0 +1,21 @@
+[package]
+name = "defmt-listener"
+edition = "2021"
+description = "A tool to decode and print defmt-tim data received from tcp."
+repository = "https://github.com/kusstas/defmt-listenter"
+categories = ["embedded", "hardware-support"]
+keywords = ["embedded", "itm", "defmt"]
+version = "0.1.0"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+exclude = [
+    ".vscode/*",
+]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4.0.32", features = ["derive"] }
+defmt-decoder = { version = "0.3.3", features = ["unstable"] }
+log = "0.4"
